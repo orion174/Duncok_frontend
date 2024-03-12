@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/html">
+
+<!-- head -->
+<th:block th:insert="~{www/layout/head :: headFragment}"></th:block>
+
+<body>
+    <th:block th:insert="~{www/layout/header :: headerFragment}"></th:block>
+
+    <th:block layout:fragment="contents"></th:block>
+
+    <th:block th:insert="~{www/layout/footer :: footerFragment}"></th:block>
+</body>
+</html>

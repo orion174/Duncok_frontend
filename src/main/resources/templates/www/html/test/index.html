@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{www/layout/layout}">
+
+<div class="container" layout:fragment="contents">
+    <h3>contents</h3>
+    <h3 class="sample_model"></h3>
+    <h3 class="sample_session"></h3>
+</div>
+
+</html>
+
+<script th:inline="javascript">
+    const MODEL_VALUE = [[${modelValue}]];
+    const SESSION_VALUE = String([[${session.sessionKey}]]);
+</script>
+
+<script th:src="@{/assets/www/js/controls/test/test.js}" type="text/javascript"></script>
